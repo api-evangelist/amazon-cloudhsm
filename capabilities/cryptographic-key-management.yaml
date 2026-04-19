@@ -1,0 +1,36 @@
+naftiko: "1.0.0-alpha1"
+
+info:
+  label: "Amazon CloudHSM Cryptographic Key Management"
+  description: "Workflow for cryptographic key management using Amazon CloudHSM for Security Engineer personas."
+  tags:
+    - Amazon Web Services
+    - Amazon CloudHSM
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+binds:
+  - namespace: env
+    keys:
+      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+      AWS_REGION: AWS_REGION
+
+capability:
+  consumes:
+    - import: cloudhsm
+      location: ./shared/cloudhsm.yaml
+
+  exposes:
+    - type: rest
+      port: 8080
+      namespace: cloudhsm-workflow-api
+      description: "Unified REST API for Amazon CloudHSM cryptographic key management."
+      resources: []
+
+    - type: mcp
+      port: 9090
+      namespace: cloudhsm-workflow-mcp
+      transport: http
+      description: "MCP server for AI-assisted Amazon CloudHSM cryptographic key management."
+      tools: []

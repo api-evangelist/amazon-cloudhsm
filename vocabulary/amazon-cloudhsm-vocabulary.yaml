@@ -1,0 +1,65 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "Amazon CloudHSM"
+  description: "Vocabulary for Amazon CloudHSM APIs covering operations, schemas, and capability workflows."
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - name: "Amazon CloudHSM API"
+      namespace: cloudhsm
+      baseUrl: https://cloudhsm.us-east-1.amazonaws.com
+      status: active
+
+  resources: []
+  actions:
+    - name: list
+      httpMethod: GET
+      pattern: read
+    - name: create
+      httpMethod: POST
+      pattern: write
+    - name: get
+      httpMethod: GET
+      pattern: read
+    - name: delete
+      httpMethod: DELETE
+      pattern: destructive
+
+  authentication:
+    schemes:
+      - type: AWS Signature Version 4
+        apis: [cloudhsm]
+
+capability:
+  workflows:
+    - name: "Cryptographic Key Management"
+      file: capabilities/cryptographic-key-management.yaml
+      toolCount: 6
+      personas: [Security Engineer]
+
+  personas:
+    - id: security-engineer
+      name: "Security Engineer"
+      workflows: ["Cryptographic Key Management"]
+
+  namespaces:
+    - name: cloudhsm
+      type: consumed
+      baseUri: https://cloudhsm.us-east-1.amazonaws.com
+    - name: cloudhsm-workflow-api
+      type: rest-exposed
+      port: 8080
+    - name: cloudhsm-workflow-mcp
+      type: mcp-exposed
+      port: 9090
+
+  binds:
+    - name: AWS_ACCESS_KEY_ID
+      workflows: ["Cryptographic Key Management"]
+    - name: AWS_SECRET_ACCESS_KEY
+      workflows: ["Cryptographic Key Management"]
+
+crossReference: []

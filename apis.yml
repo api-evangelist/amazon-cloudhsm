@@ -1,16 +1,119 @@
 aid: amazon-cloudhsm
-name: Amazon Cloudhsm
+name: Amazon CloudHSM
 description: >-
-  Amazon Cloudhsm provides API capabilities.
+  AWS CloudHSM is a cloud-based hardware security module (HSM) that enables you to manage cryptographic keys on dedicated FIPS 140-2 Level 3 validated, single-tenant HSM instances running within your own
+  VPC for regulatory compliance and data security.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-tags: []
+tags:
+- AWS
+- CloudHSM
+- Security
+- Cryptography
+- HSM
+- Compliance
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-cloudhsm/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-03-16'
+modified: '2026-04-19'
 specificationVersion: '0.19'
-apis: []
+apis:
+- name: Amazon CloudHSM API
+  description: API for creating and managing CloudHSM clusters and HSM instances for dedicated hardware-based cryptographic key management.
+  image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
+  humanURL: https://aws.amazon.com/cloudhsm/
+  baseURL: https://cloudhsm.us-east-1.amazonaws.com
+  tags:
+  - AWS
+  - CloudHSM
+  - Security
+  - Cryptography
+  properties:
+  - type: Documentation
+    url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/
+  - type: GettingStarted
+    url: https://aws.amazon.com/cloudhsm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/cloudhsm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/cloudhsm/faqs/
+  - type: APIReference
+    url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/
+  - type: CLI
+    url: https://docs.aws.amazon.com/cli/latest/reference/cloudhsmv2/
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
+common:
+- type: Portal
+  url: https://aws.amazon.com/
+- type: Website
+  url: https://aws.amazon.com/cloudhsm/
+- type: Documentation
+  url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/
+- type: TermsOfService
+  url: https://aws.amazon.com/service-terms/
+- type: PrivacyPolicy
+  url: https://aws.amazon.com/privacy/
+- type: Support
+  url: https://aws.amazon.com/premiumsupport/
+- type: Blog
+  url: https://aws.amazon.com/blogs/security/
+- type: GitHubOrganization
+  url: https://github.com/aws
+- type: Console
+  url: https://console.aws.amazon.com/cloudhsm/
+- type: SignUp
+  url: https://signin.aws.amazon.com/signup?request_type=register
+- type: StatusPage
+  url: https://health.aws.amazon.com/health/status
+- type: YouTube
+  url: https://www.youtube.com/user/AmazonWebServices
+- type: StackOverflow
+  url: https://stackoverflow.com/questions/tagged/aws-cloudhsm
+- type: Contact
+  url: https://aws.amazon.com/contact-us/
+- type: Compliance
+  url: https://aws.amazon.com/compliance/
+- type: SpectralRules
+  url: rules/amazon-cloudhsm-spectral-rules.yml
+- type: Vocabulary
+  url: vocabulary/amazon-cloudhsm-vocabulary.yaml
+- type: NaftikoCapability
+  url: capabilities/cryptographic-key-management.yaml
+- type: Features
+  data:
+  - name: FIPS 140-2 Level 3 Validated
+    description: Dedicated single-tenant HSM instances meeting the highest FIPS validation levels.
+  - name: Full Key Control
+    description: Complete control over cryptographic keys with no AWS access to key material.
+  - name: Elastic Capacity
+    description: Add or remove HSMs from clusters as needed, paying only for active resources hourly.
+  - name: High Availability
+    description: Multi-AZ HSM clusters provide redundancy and automatic failover.
+  - name: Industry-Standard APIs
+    description: Supports PKCS#11, Java JCE, and Microsoft CNG APIs for application integration.
+- type: UseCases
+  data:
+  - name: Data Encryption
+    description: Protect sensitive data with hardware-backed encryption keys.
+  - name: SSL/TLS Offloading
+    description: Manage SSL/TLS certificates and private keys in dedicated HSMs.
+  - name: Certificate Authority
+    description: Secure private CA keys for organizations issuing their own certificates.
+  - name: Database Encryption
+    description: Support transparent data encryption (TDE) for Oracle and SQL Server databases.
+  - name: Regulatory Compliance
+    description: Meet PCI DSS, HIPAA, and other regulatory requirements for key management.
+- type: Integrations
+  data:
+  - name: Amazon RDS
+    description: Use CloudHSM keys for Oracle TDE and SQL Server TDE in RDS.
+  - name: AWS KMS
+    description: Use CloudHSM as a custom key store for AWS KMS operations.
+  - name: Amazon VPC
+    description: HSM instances run inside your VPC for network isolation.
+  - name: AWS IAM
+    description: Control access to HSM cluster management operations.
+  - name: AWS CloudTrail
+    description: Audit HSM management API calls via CloudTrail.
