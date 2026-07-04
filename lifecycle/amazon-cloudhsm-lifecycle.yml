@@ -1,0 +1,28 @@
+generated: '2026-06-20'
+method: searched
+source: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/
+note: >-
+  AWS CloudHSM exposes the "V2" (cloudhsmv2) control-plane API, dated
+  API version 2017-04-28. The original CloudHSM Classic service and its API
+  reached end of life; the V2 API is the current interface. AWS does not use
+  RFC 8594 Sunset/Deprecation response headers on this service; deprecation is
+  communicated via documentation and account notifications.
+versioning:
+  scheme: dated-api-version
+  current: "2017-04-28"
+  service: cloudhsmv2
+  docs: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/
+deprecation:
+  policy_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/
+  sunset_header: false
+  notes: >-
+    CloudHSM Classic (the pre-2017 service) was deprecated and retired; the V2
+    API replaced it. AWS communicates deprecations through service documentation
+    and Health/account notifications rather than Sunset/Deprecation headers.
+sla:
+  url: https://aws.amazon.com/cloudhsm/sla/
+  uptime_target: "99.95%"
+  notes: 99.95% Monthly Uptime for Multi-AZ clusters; 99.5% for single clusters (below which service credits apply).
+status_page: https://health.aws.amazon.com/health/status
+support: https://aws.amazon.com/premiumsupport/
+deprecated_operations: []

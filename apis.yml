@@ -15,7 +15,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-cloudhsm/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-04-19'
+modified: '2026-06-20'
 specificationVersion: '0.19'
 apis:
 - name: Amazon CloudHSM API
@@ -81,6 +81,22 @@ common:
   url: vocabulary/amazon-cloudhsm-vocabulary.yaml
 - type: NaftikoCapability
   url: capabilities/cryptographic-key-management.yaml
+- type: Packages
+  url: packages/amazon-cloudhsm-packages.yml
+- type: WellKnown
+  url: well-known/amazon-cloudhsm-well-known.yml
+- type: SecurityTxt
+  url: well-known/amazon-cloudhsm-security.txt
+- type: MCPServer
+  url: mcp/amazon-cloudhsm-mcp.yml
+- type: LLMsTxt
+  url: llms/amazon-cloudhsm-llms.txt
+- type: Conformance
+  url: conformance/amazon-cloudhsm-conformance.yml
+- type: ErrorCatalog
+  url: errors/amazon-cloudhsm-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/amazon-cloudhsm-lifecycle.yml
 - type: Features
   data:
   - name: FIPS 140-2 Level 3 Validated

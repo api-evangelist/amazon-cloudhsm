@@ -1,0 +1,47 @@
+generated: '2026-06-20'
+method: derived
+source: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/
+note: >-
+  Derived from the documented CloudHSM V2 API surface (AWS JSON/query protocol,
+  SigV4 request signing) and the service's published compliance claims. CloudHSM
+  is not an OAuth2/OIDC/FHIR/SCIM/OData API; it authenticates with AWS Signature
+  Version 4 and returns AWS query-style errors rather than RFC 9457 problem+json.
+standards:
+  - id: aws-sigv4
+    conforms: true
+    evidence: All CloudHSM V2 requests are authenticated with AWS Signature Version 4.
+  - id: oauth2
+    conforms: false
+    evidence: Uses AWS SigV4 credentials, not OAuth2 bearer tokens.
+  - id: oidc
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors returned as AWS query error shapes (e.g. AccessDeniedException), not application/problem+json.
+  - id: rfc9116-security-txt
+    conforms: true
+    evidence: https://aws.amazon.com/.well-known/security.txt returns 200 (RFC 9116).
+  - id: fips-140-2-level-3
+    conforms: true
+    evidence: HSMs are FIPS 140-2 Level 3 validated (single-tenant, dedicated hardware).
+  - id: pci-dss
+    conforms: true
+    evidence: CloudHSM is listed in scope of AWS PCI DSS attestation for key management.
+  - id: pkcs11
+    conforms: true
+    evidence: CloudHSM Client SDK exposes PKCS#11 (Cryptoki) library for application integration.
+  - id: jce
+    conforms: true
+    evidence: CloudHSM Client SDK provides a Java Cryptography Extension (JCE) provider.
+  - id: cng-ksp
+    conforms: true
+    evidence: CloudHSM Client SDK provides a Microsoft CNG/KSP provider.
+  - id: pagination
+    conforms: true
+    evidence: List/Describe operations use NextToken + MaxResults cursor pagination.
+  - id: fhir-r4
+    conforms: false
+  - id: scim2
+    conforms: false
+  - id: odata
+    conforms: false

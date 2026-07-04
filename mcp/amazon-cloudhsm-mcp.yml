@@ -1,0 +1,66 @@
+generated: '2026-06-20'
+method: derived
+status: candidate
+source: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Operations.md
+note: >-
+  No official AWS-hosted MCP server dedicated to CloudHSM was found. This is a
+  derived candidate: one tool per documented CloudHSM V2 API action. Tool names
+  are snake_case of the AWS action names.
+server:
+  name: amazon-cloudhsm
+  transport: http
+tools:
+  - name: copy_backup_to_region
+    description: Copy an AWS CloudHSM cluster backup to a different region.
+    source_operation: CopyBackupToRegion
+  - name: create_cluster
+    description: Creates a new AWS CloudHSM cluster.
+    source_operation: CreateCluster
+  - name: create_hsm
+    description: Creates a new hardware security module (HSM) in the specified AWS CloudHSM cluster.
+    source_operation: CreateHsm
+  - name: delete_backup
+    description: Deletes a specified AWS CloudHSM backup.
+    source_operation: DeleteBackup
+  - name: delete_cluster
+    description: Deletes the specified AWS CloudHSM cluster.
+    source_operation: DeleteCluster
+  - name: delete_hsm
+    description: Deletes the specified HSM.
+    source_operation: DeleteHsm
+  - name: delete_resource_policy
+    description: Deletes an AWS CloudHSM resource policy.
+    source_operation: DeleteResourcePolicy
+  - name: describe_backups
+    description: Gets information about backups of AWS CloudHSM clusters.
+    source_operation: DescribeBackups
+  - name: describe_clusters
+    description: Gets information about AWS CloudHSM clusters.
+    source_operation: DescribeClusters
+  - name: get_resource_policy
+    description: Retrieves the resource policy document attached to a given resource.
+    source_operation: GetResourcePolicy
+  - name: initialize_cluster
+    description: Claims an AWS CloudHSM cluster by submitting the cluster certificate and the CA root certificate.
+    source_operation: InitializeCluster
+  - name: list_tags
+    description: Gets a list of tags for the specified AWS CloudHSM cluster.
+    source_operation: ListTags
+  - name: modify_backup_attributes
+    description: Modifies attributes for an AWS CloudHSM backup.
+    source_operation: ModifyBackupAttributes
+  - name: modify_cluster
+    description: Modifies an AWS CloudHSM cluster.
+    source_operation: ModifyCluster
+  - name: put_resource_policy
+    description: Creates or updates an AWS CloudHSM resource policy.
+    source_operation: PutResourcePolicy
+  - name: restore_backup
+    description: Restores a specified AWS CloudHSM backup that is in the PENDING_DELETION state.
+    source_operation: RestoreBackup
+  - name: tag_resource
+    description: Adds or overwrites one or more tags for the specified AWS CloudHSM cluster.
+    source_operation: TagResource
+  - name: untag_resource
+    description: Removes the specified tag or tags from the specified AWS CloudHSM cluster.
+    source_operation: UntagResource

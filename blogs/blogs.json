@@ -1,0 +1,13 @@
+{
+  "repo": "amazon-cloudhsm",
+  "feeds": [
+    {
+      "source": "https://aws.amazon.com/blogs/security/",
+      "feed_url": "https://aws.amazon.com/blogs/security/feed/",
+      "title": "AWS Security Blog",
+      "saved": 20
+    }
+  ],
+  "fetched": "2026-07-04T13:39:28Z",
+  "post_count": 20
+}

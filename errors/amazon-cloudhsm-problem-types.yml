@@ -1,0 +1,72 @@
+generated: '2026-06-20'
+method: searched
+source: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/CommonErrors.md
+format: aws-query
+note: >-
+  CloudHSM V2 returns AWS query-protocol error shapes (an error code + message),
+  not RFC 9457 application/problem+json. These are the common error types the
+  service may return, transcribed from the AWS CloudHSM API Reference. Action-
+  specific errors (e.g. CloudHsmAccessDeniedException, CloudHsmInternalFailureException,
+  CloudHsmInvalidRequestException, CloudHsmResourceNotFoundException,
+  CloudHsmServiceException, CloudHsmTagException) are documented per operation.
+problems:
+  - code: AccessDeniedException
+    status: 403
+    title: Access denied
+    detail: You don't have permission to perform this action. Verify that your IAM policy includes the required permissions.
+  - code: ExpiredTokenException
+    status: 403
+    title: Security token expired
+    detail: The security token included in the request has expired. Request a new security token and try again.
+  - code: IncompleteSignature
+    status: 403
+    title: Incomplete signature
+    detail: The request signature doesn't conform to AWS standards.
+  - code: InternalFailure
+    status: 500
+    title: Internal failure
+    detail: The request can't be processed right now because of an internal server issue. Try again later.
+  - code: MalformedHttpRequestException
+    status: 400
+    title: Malformed HTTP request
+    detail: The request body can't be processed (e.g. content encoding mismatch).
+  - code: NotAuthorized
+    status: 401
+    title: Not authorized
+    detail: You don't have permissions to perform this action.
+  - code: OptInRequired
+    status: 403
+    title: Opt-in required
+    detail: Your AWS account needs a subscription for this service.
+  - code: RequestAbortedException
+    status: 400
+    title: Request aborted
+    detail: The request was aborted before a response could be returned.
+  - code: RequestEntityTooLargeException
+    status: 413
+    title: Request entity too large
+    detail: The request entity is too large. Reduce the size of the request body and try again.
+  - code: RequestTimeoutException
+    status: 408
+    title: Request timeout
+    detail: The request timed out. Try again.
+  - code: ServiceUnavailable
+    status: 503
+    title: Service unavailable
+    detail: The service is temporarily unavailable. Try again later.
+  - code: ThrottlingException
+    status: 400
+    title: Throttling
+    detail: Your request rate is too high. Reduce the frequency of requests. SDKs retry automatically.
+  - code: UnknownOperationException
+    status: 404
+    title: Unknown operation
+    detail: The action or operation isn't recognized.
+  - code: UnrecognizedClientException
+    status: 403
+    title: Unrecognized client
+    detail: The X.509 certificate or AWS access key ID you provided doesn't exist in our records.
+  - code: ValidationError
+    status: 400
+    title: Validation error
+    detail: The input doesn't meet the required format or constraints.

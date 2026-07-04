@@ -1,0 +1,39 @@
+# AWS CloudHSM API Reference
+
+> Welcome to the AWS CloudHSM API Reference.
+
+- [Welcome](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/Welcome.md)
+- [Common Parameters](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/CommonParameters.md)
+- [Common Error Types](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/CommonErrors.md)
+
+## [Actions](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Operations.md)
+
+- [CopyBackupToRegion](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CopyBackupToRegion.md): Copy an AWS CloudHSM cluster backup to a different region.
+- [CreateCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateCluster.md): Creates a new AWS CloudHSM cluster.
+- [CreateHsm](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateHsm.md): Creates a new hardware security module (HSM) in the specified AWS CloudHSM cluster.
+- [DeleteBackup](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteBackup.md): Deletes a specified AWS CloudHSM backup.
+- [DeleteCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteCluster.md): Deletes the specified AWS CloudHSM cluster.
+- [DeleteHsm](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteHsm.md): Deletes the specified HSM.
+- [DeleteResourcePolicy](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteResourcePolicy.md): Deletes an AWS CloudHSM resource policy.
+- [DescribeBackups](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeBackups.md): Gets information about backups of AWS CloudHSM clusters.
+- [DescribeClusters](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeClusters.md): Gets information about AWS CloudHSM clusters.
+- [GetResourcePolicy](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_GetResourcePolicy.md): Retrieves the resource policy document attached to a given resource.
+- [InitializeCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_InitializeCluster.md): Claims an AWS CloudHSM cluster by submitting the cluster certificate issued by your issuing certificate authority (CA) and the CA's root certificate.
+- [ListTags](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ListTags.md): Gets a list of tags for the specified AWS CloudHSM cluster.
+- [ModifyBackupAttributes](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyBackupAttributes.md): Modifies attributes for AWS CloudHSM backup.
+- [ModifyCluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.md): Modifies AWS CloudHSM cluster.
+- [PutResourcePolicy](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_PutResourcePolicy.md): Creates or updates an AWS CloudHSM resource policy.
+- [RestoreBackup](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_RestoreBackup.md): Restores a specified AWS CloudHSM backup that is in the PENDING_DELETION state.
+- [TagResource](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_TagResource.md): Adds or overwrites one or more tags for the specified AWS CloudHSM cluster.
+- [UntagResource](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_UntagResource.md): Removes the specified tag or tags from the specified AWS CloudHSM cluster.
+
+
+## [Data Types](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Types.md)
+
+- [Backup](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Backup.md): Contains information about a backup of an AWS CloudHSM cluster.
+- [BackupRetentionPolicy](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_BackupRetentionPolicy.md): A policy that defines the number of days to retain backups.
+- [Certificates](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Certificates.md): Contains one or more certificates or a certificate signing request (CSR).
+- [Cluster](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Cluster.md): Contains information about an AWS CloudHSM cluster.
+- [DestinationBackup](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DestinationBackup.md): Contains information about the backup that will be copied and created by the operation.
+- [Hsm](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Hsm.md): Contains information about a hardware security module (HSM) in an AWS CloudHSM cluster.
+- [Tag](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Tag.md): Contains a tag.

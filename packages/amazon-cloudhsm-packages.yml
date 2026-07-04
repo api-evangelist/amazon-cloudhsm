@@ -1,0 +1,47 @@
+generated: '2026-06-20'
+method: searched
+source: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/
+description: >-
+  First-party AWS SDK client libraries covering the AWS CloudHSM V2
+  (cloudhsmv2) service. AWS ships a per-service client for each language SDK;
+  the Python SDK (boto3) is a single package covering all services.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@aws-sdk/client-cloudhsm-v2"
+    version: 3.1079.0
+    url: https://www.npmjs.com/package/@aws-sdk/client-cloudhsm-v2
+    install: npm install @aws-sdk/client-cloudhsm-v2
+    official: true
+  - language: python
+    registry: pypi
+    name: boto3
+    url: https://pypi.org/project/boto3/
+    install: pip install boto3
+    official: true
+    notes: boto3.client('cloudhsmv2') exposes the CloudHSM V2 API
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/aws/aws-sdk-go-v2/service/cloudhsmv2
+    url: https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/cloudhsmv2
+    install: go get github.com/aws/aws-sdk-go-v2/service/cloudhsmv2
+    official: true
+  - language: java
+    registry: maven-central
+    name: software.amazon.awssdk:cloudhsmv2
+    url: https://central.sonatype.com/artifact/software.amazon.awssdk/cloudhsmv2
+    install: "implementation 'software.amazon.awssdk:cloudhsmv2'"
+    official: true
+  - language: dotnet
+    registry: nuget
+    name: AWSSDK.CloudHSMV2
+    url: https://www.nuget.org/packages/AWSSDK.CloudHSMV2
+    install: dotnet add package AWSSDK.CloudHSMV2
+    official: true
+  - language: ruby
+    registry: rubygems
+    name: aws-sdk-cloudhsmv2
+    version: 1.93.0
+    url: https://rubygems.org/gems/aws-sdk-cloudhsmv2
+    install: gem install aws-sdk-cloudhsmv2
+    official: true
