@@ -27,7 +27,7 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-cloudhsm/refs/heads/main/apis.yml
 created: '2026-03-16'
 modified: '2026-06-20'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - name: Amazon CloudHSM API
   description: API for creating and managing CloudHSM clusters and HSM instances for dedicated hardware-based cryptographic key management.
@@ -96,8 +96,6 @@ common:
   url: rules/amazon-cloudhsm-spectral-rules.yml
 - type: Vocabulary
   url: vocabulary/amazon-cloudhsm-vocabulary.yaml
-- type: NaftikoCapability
-  url: capabilities/cryptographic-key-management.yaml
 - type: Packages
   url: packages/amazon-cloudhsm-packages.yml
 - type: WellKnown
