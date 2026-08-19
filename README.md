@@ -80,7 +80,6 @@ API for creating and managing CloudHSM clusters and HSM instances for dedicated 
 - [Website](https://aws.amazon.com/cloudhsm/)
 - [SpectralRules](rules/amazon-cloudhsm-spectral-rules.yml)
 - [Vocabulary](vocabulary/amazon-cloudhsm-vocabulary.yaml)
-- [NaftikoCapability](capabilities/cryptographic-key-management.yaml)
 
 ## Features
 
@@ -121,18 +120,6 @@ API for creating and managing CloudHSM clusters and HSM instances for dedicated 
 ### JSON-LD
 
 - [Amazon CloudHSM Context](json-ld/amazon-cloudhsm-context.jsonld)
-
-## Capabilities
-
-### Shared Per-API Definitions
-
-- [Amazon CloudHSM](capabilities/shared/cloudhsm.yaml) — 6 operations
-
-### Workflow Capabilities
-
-| Workflow | APIs Combined | Tools | Persona |
-|----------|--------------|-------|---------|
-| [Cryptographic Key Management](capabilities/cryptographic-key-management.yaml) | Amazon CloudHSM | 6 | Security Engineer |
 
 ## Vocabulary
 
