@@ -159,3 +159,5 @@ common:
     description: Control access to HSM cluster management operations.
   - name: AWS CloudTrail
     description: Audit HSM management API calls via CloudTrail.
+x-parent: aws
+x-relationship: product
