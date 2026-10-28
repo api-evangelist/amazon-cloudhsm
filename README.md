@@ -1,4 +1,4 @@
-# Amazon CloudHSM (amazon-cloudhsm)
+# Amazon CloudHSM
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,93 +66,117 @@
 
 AWS CloudHSM is a cloud-based hardware security module (HSM) that enables you to manage cryptographic keys on dedicated FIPS 140-2 Level 3 validated, single-tenant HSM instances running within your own VPC for regulatory compliance and data security.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/amazon-cloudhsm/refs/heads/main/apis.yml)
+**Areas:** AWS · CloudHSM · Security · Cryptography · HSM · Compliance
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Amazon CloudHSM on APIs.io
 
-## Tags:
+Everything profiled for Amazon CloudHSM is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amazon-cloudhsm/](https://apis.io/providers/amazon-cloudhsm/)** — or go straight to one of the APIs or properties below.
 
- - AWS, CloudHSM, Security, Cryptography, HSM, Compliance
+### APIs (6)
 
-## Timestamps
+- [Amazon CloudHSM API](https://apis.io/apis/amazon-cloudhsm/amazon-cloudhsm-api/) — API for creating and managing CloudHSM clusters and HSM instances for dedicated hardware-based cryptographic key management.
+- [Amazon CloudHSM Cloudhsm Hapg API](https://apis.io/apis/amazon-cloudhsm/amazon-cloudhsm-hapg-api/) — The Cloudhsm Hapg API from Amazon CloudHSM — 5 operation(s) for cloudhsm hapg.
+- [Amazon CloudHSM Cloudhsm Hsm API](https://apis.io/apis/amazon-cloudhsm/amazon-cloudhsm-hsm-api/) — The Cloudhsm Hsm API from Amazon CloudHSM — 5 operation(s) for cloudhsm hsm.
+- [Amazon CloudHSM Cloudhsm Luna Client API](https://apis.io/apis/amazon-cloudhsm/amazon-cloudhsm-luna-client-api/) — The Cloudhsm Luna Client API from Amazon CloudHSM — 5 operation(s) for cloudhsm luna client.
+- [Amazon CloudHSM Cloudhsm Operations API](https://apis.io/apis/amazon-cloudhsm/amazon-cloudhsm-operations-api/) — The Cloudhsm Operations API from Amazon CloudHSM — 2 operation(s) for cloudhsm operations.
+- [Amazon CloudHSM Cloudhsm Tag API](https://apis.io/apis/amazon-cloudhsm/amazon-cloudhsm-tag-api/) — The Cloudhsm Tag API from Amazon CloudHSM — 3 operation(s) for cloudhsm tag.
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Amazon CloudHSM API
-API for creating and managing CloudHSM clusters and HSM instances for dedicated hardware-based cryptographic key management.
+#### MCP servers (1)
 
-**Human URL:** [https://aws.amazon.com/cloudhsm/](https://aws.amazon.com/cloudhsm/)
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags:
+- [amazon-cloudhsm](https://apis.io/servers/amazon-cloudhsm/amazon-cloudhsm/)
 
- - AWS, CloudHSM, Security, Cryptography
+#### Vocabulary (1)
 
-#### Properties
+The provider's domain terms, defined.
 
-- [Documentation](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/)
+- [Amazon Cloudhsm Vocabulary](https://apis.io/vocabularies/amazon-cloudhsm/amazon-cloudhsm-vocabulary/)
 
-- [APIReference](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/)
+#### Governance rules (1)
 
-## Common Properties
+Spectral rulesets for the provider's contracts.
 
-- [Portal](https://aws.amazon.com/)
+- [Amazon CloudHSM API Rules](https://apis.io/rules/amazon-cloudhsm/amazon-cloudhsm-spectral-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Amazon Cloudhsm Domain Security](https://apis.io/security/amazon-cloudhsm/amazon-cloudhsm-domain-security/)
+- [Amazon Cloudhsm Trust Center](https://apis.io/security/amazon-cloudhsm/amazon-cloudhsm-trust-center/)
+- [Amazon Cloudhsm Vulnerability Disclosure](https://apis.io/security/amazon-cloudhsm/amazon-cloudhsm-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://aws.amazon.com/cloudhsm/)
-- [SpectralRules](rules/amazon-cloudhsm-spectral-rules.yml)
-- [Vocabulary](vocabulary/amazon-cloudhsm-vocabulary.yaml)
+- [Documentation](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/)
+- [Sign up](https://signin.aws.amazon.com/signup?request_type=register)
+- [Support](https://aws.amazon.com/premiumsupport/)
+- [Blog](https://aws.amazon.com/blogs/security/)
+- [Compliance](https://aws.amazon.com/compliance/)
+- [Terms of service](https://aws.amazon.com/service-terms/)
+- [Privacy policy](https://aws.amazon.com/privacy/)
+- [GitHub](https://github.com/aws)
+- [Status](https://health.aws.amazon.com/health/status)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| FIPS 140-2 Level 3 Validated | Dedicated single-tenant HSM instances meeting the highest FIPS validation levels. |
-| Full Key Control | Complete control over cryptographic keys with no AWS access to key material. |
-| Elastic Capacity | Add or remove HSMs from clusters as needed, paying only for active resources hourly. |
-| High Availability | Multi-AZ HSM clusters provide redundancy and automatic failover. |
-| Industry-Standard APIs | Supports PKCS#11, Java JCE, and Microsoft CNG APIs for application integration. |
+**Kin Score 40.6** — developing · rubric 0.25.0 · scored 2026-10-23
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 28.0 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 59.5 |
+| Access clarity | 60.5 |
 
-| Name | Description |
-|------|-------------|
-| Data Encryption | Protect sensitive data with hardware-backed encryption keys. |
-| SSL/TLS Offloading | Manage SSL/TLS certificates and private keys in dedicated HSMs. |
-| Certificate Authority | Secure private CA keys for organizations issuing their own certificates. |
-| Database Encryption | Support transparent data encryption (TDE) for Oracle and SQL Server databases. |
-| Regulatory Compliance | Meet PCI DSS, HIPAA, and other regulatory requirements for key management. |
+**Agent readiness 2.9** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
 
-| Name | Description |
-|------|-------------|
-| Amazon RDS | Use CloudHSM keys for Oracle TDE and SQL Server TDE in RDS. |
-| AWS KMS | Use CloudHSM as a custom key store for AWS KMS operations. |
-| Amazon VPC | HSM instances run inside your VPC for network isolation. |
-| AWS IAM | Control access to HSM cluster management operations. |
-| AWS CloudTrail | Audit HSM management API calls via CloudTrail. |
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
 
-## Artifacts
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amazon-cloudhsm/](https://apis.io/providers/amazon-cloudhsm/).
 
-### JSON Schema
+## How this profile is made
 
-- No schemas generated
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-### JSON-LD
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amazon CloudHSM: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- [Amazon CloudHSM Context](json-ld/amazon-cloudhsm-context.jsonld)
+## Open an issue
 
-## Vocabulary
-
-- [Amazon CloudHSM Vocabulary](vocabulary/amazon-cloudhsm-vocabulary.yaml) — Unified taxonomy covering operations, workflows, and personas
-
-## Rules
-
-- [Amazon CloudHSM Spectral Rules](rules/amazon-cloudhsm-spectral-rules.yml) — 19 rules enforcing Amazon CloudHSM API conventions
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amazon-cloudhsm/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
